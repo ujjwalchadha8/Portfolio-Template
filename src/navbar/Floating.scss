@@ -1,0 +1,22 @@
+@import '../_styles/theme';
+
+.floating {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.background-resume {
+    background-color: $color-secondary-text;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.background-resume:hover {
+    background-color: black;
+}
+
+.text-small {
+    font-size: 0.8em;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,20 @@
+@import '../_styles/theme';
+
+.nav-menu-big {
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    left: 0%;
+    z-index: 100;
+    top: $navbar-height;
+    width: 100%;
+    background-color: $color-primary-background-dark;
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline
+}

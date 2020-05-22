@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// eslint-disable-next-line
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'jquery'
+import 'bootstrap/dist/js/bootstrap';
+
+import './App.scss'
+import Home from './home/home';
+
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+library.add(faEnvelope, faPhone)
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
+      <div className="App app-background">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <Router>
+              <Route path="/" exact render={() => <Redirect to="/home"/>} />
+              <Route path="/home/" exact component={Home}/>
+          </Router>
         </header>
       </div>
     );
   }
 }
+
 
 export default App;

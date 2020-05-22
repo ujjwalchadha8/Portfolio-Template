@@ -1,0 +1,16 @@
+@import './_styles/theme';
+
+
+.app-background {
+  background-color: #46344E;
+}
+
+.App {
+  color: #bbb;
+  /* font-family: Arial, Helvetica, sans-serif */
+  font-family: "Varela Round", sans-serif;
+}
+
+.primaryText{
+	color: $color-primary-text;
+}
